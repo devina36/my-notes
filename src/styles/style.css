@@ -19,6 +19,7 @@ body {
   position: fixed;
   top: 0;
   justify-content: space-between;
+  z-index: 999;
 }
 
 .wrapper{
@@ -124,6 +125,13 @@ h2{
   padding: 10px 10px 45px 10px;
   border-radius: 10px;
   position: relative;
+}
+
+.pin{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: rotate(45deg);
 }
 
 .item h3{

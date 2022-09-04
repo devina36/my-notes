@@ -10,9 +10,11 @@ import { faThumbTack } from "@fortawesome/free-solid-svg-icons";
 function NoteItem({ id, title, text, createdAt, archived, onDelete, onArchive, onUnarchive }) {
   return (
     <div className="item">
+      <div className="pin">
       {
-        archived ? <FontAwesomeIcon className="pin" icon={faThumbTack} /> : ''
+        archived ? <FontAwesomeIcon icon={faThumbTack} /> : ''
       }
+      </div>
       <Note title={title} date={tanggalFormat(createdAt)} text={text} />
 
       <div className="btn">

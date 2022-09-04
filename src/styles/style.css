@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Just Another Hand', cursive;
+  background: whitesmoke;
+  color: #202124;
+}
+
+.header {
+  width: 100%;
+  background: #202124;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+}
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.note-input{
+  width: 40%;
+  padding: 10px 30px;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 36px;
+}
+
+.note-input .max{
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 16px;
+  text-align: end;
+}
+
+.note-input .title{
+  width: 100%;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 16px;
+  display: block;
+  background: whitesmok;
+  color: #202124;
+  border-radius: 10px;
+  border: 2px solid #202124;
+  padding: 8px 5px;
+  margin-bottom: 25px;
+}
+
+.note-input .text{
+  min-height: 80px;
+  width: 100%;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 16px;
+  display: block;
+  background: whitesmok;
+  color: #202124;
+  border-radius: 10px;
+  border: 2px solid #202124;
+  padding: 8px 5px;
+  margin-bottom: 25px;
+}
+
+.note-input button{
+  width: 100%;
+  background-color: #202124;
+  color: whitesmoke;
+  border: 2px solid transparent;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.note-input button:hover{
+  border: 2px solid #202124;
+  color: #202124;
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+.wrap {
+  width: 60%;
+  padding: 10px 30px;
+}
+
+.note-search input{
+  width: 300px;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 16px;
+  display: block;
+  background: whitesmok;
+  color: #202124;
+  border-radius: 10px;
+  border: 2px solid #202124;
+  padding: 8px 5px;
+}
+
+.aktif{
+  margin-bottom : 25px;
+}
+
+.cl{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(min-content, max-content);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.item{
+  border: 2px dotted #202124;
+  padding: 10px 10px 45px 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.item h3{
+  font-size: 24px;
+}
+
+.btn{
+  position: absolute;
+  bottom: 10px;
+}
+
+.delete{
+  width: 30px;
+  height: 30px;
+  color: #b00020;
+  border-radius: 50%;
+  border: 2px dotted #b00020;
+  margin-right: 10px;
+}
+
+.delete:hover{
+  cursor: pointer;
+  color: #ff5f52;
+  border: 2px dotted #ff5f52;
+}
+
+.archive, .unarchive{
+  width: 30px;
+  height: 30px;
+  color: #c49000;
+  border-radius: 50%;
+  border: 2px dotted #c49000;
+}
+
+.archive:hover, .unarchive:hover{
+  cursor: pointer;
+  color: #fff263;;
+  border: 2px dotted #fff263;;
+}
+
+.kosong{
+  text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+  .cl{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper{
+    display: block;
+  }
+  .note-input{
+    width: 60%;
+    margin: auto;
+    min-width: 400px;
+  }
+  .wrap{
+    width: 70%;
+    min-width: 400px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cl{
+    grid-template-columns: 1fr;
+  }
+  .note-input{
+    min-width: 350px;
+  }
+  .wrap{
+    min-width: 300px;
+  }
+  .note-search input{
+    width: 200px;
+  }
+}
